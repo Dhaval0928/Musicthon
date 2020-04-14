@@ -1,0 +1,48 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/app/downloadBox/*.html",
+          "/app/downloadBox/*.css",
+          "/app/downloadBox/*.js",
+          "/*.css",
+          "/*.js"
+        ]
+      }
+    }, {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "firebase",
+      "urls": [
+        "https://firebasestorage.googleapis.com/v0/b/musicthon-bea66.appspot.com/o/",
+        "https://musicthon-bea66.firebaseio.com/**",
+        "https://s-usc1c-nss-237.firebaseio.com/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 10,
+        "maxAge": "6h",
+        "timeout": "10s",
+        "strategy": "freshness"
+      }
+    }
+  ]
+}

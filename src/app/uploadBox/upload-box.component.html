@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="card green accent-4 z-depth-5">
+                <i class="fa fa-home fa-2x" style="justify-self: right; align-self: flex-end;margin-top: 1%; margin-right: 1%;" routerLink="/"></i>
+                <span class="white-text">
+                    <h3>
+                        <strong>
+                            Upload Music
+                        </strong>
+                    </h3>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="card green accent-3 z-depth-5">
+                <input type="file" accept="audio/*" (change)="upload($event)">
+            </div>
+        </div>
+    </div>
+</div>

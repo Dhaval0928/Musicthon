@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="card blue darken-1 z-depth-5">
+                <span class="white-text">
+                    <div class="row">
+                        <div class="col s2">
+                            <i class="fa fa-music"></i>
+                        </div>    
+                        <div class="col s8" style="margin-top: 1%;">
+                            <h3>
+                                <strong>
+                                    Musicthon
+                                </strong>
+                            </h3>
+                        </div>
+                        <div class="col s2">
+                            <i class="fa fa-music"></i>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s9">
+            <div class="card green accent-4 z-depth-5" routerLink="/upload">
+                <span class="white-text">
+                    <h5>
+                        <strong>
+                            Upload Music
+                        </strong>
+                    </h5>
+                </span>
+            </div>
+        </div>
+        <div class="col s3">
+            <div class="card orange lighten-1 z-depth-5" routerLink="/download">
+                <span class="white-text">
+                    <h5>
+                        <strong>
+                            Downloads
+                        </strong>
+                    </h5>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="card deep-orange accent-2 z-depth-5">
+                <table class="white-text highlight">
+                    <thead class="deep-orange accent-3" style="width: 100%;">
+                        <th>Recently Added</th>
+                        <th></th>    
+                        <th>
+                            <div style="float: right; margin-right: 5%;" id="downloadFlag" hidden>
+                                <div class="form-inline">
+                                    <div style="margin: 1%;">Downloading... </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div *ngIf="isLoading" style="float: right; margin-right: 5%;">
+                                <div class="form-inline">
+                                    <div style="margin: 1%;">Loading... </div>
+                                </div>
+                            </div>
+                        </th>
+                    </thead>
+                    <tbody *ngFor="let song of songslist;let i = index">
+                      <tr>
+                        <td (click)="startPLaying(i)">{{ song.name }}</td>
+                        <td></td>
+                        <td style="width:5%"><i class="fa fa-download fa-lg" style="float: right;" (click)="downloadSong(i)"></i></td>
+                        <td style="width:3%"></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

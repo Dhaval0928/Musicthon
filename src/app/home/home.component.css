@@ -1,0 +1,73 @@
+h3,h5{
+    font-size: 2vw;
+}
+
+.fa-music{
+    font-size: 2vw;
+}
+
+.card.blue{
+    text-align: center;
+    height: 12vw;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.blue:hover{
+    cursor: pointer;
+    box-shadow: -1px 2px 37px 0px #42a5f5;
+}
+
+.card.orange{
+    text-align: center;
+    height: 12vw;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.card.orange:hover{
+    cursor: pointer;
+    box-shadow: -1px 2px 37px 0px rgba(255,112,67,1);
+}
+/*
+.card.orange:hover h4{
+    margin-top: 0%;
+} 
+*/
+.card.orange:hover::after{
+    font-family: FontAwesome;
+    content: "\f019";
+    color: white;
+    font-size: xx-large;
+}
+
+.card.green{
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 12vw;
+}
+
+.card.green:hover{
+    cursor: pointer;
+    box-shadow: -1px 3px 37px 0px rgba(0,200,83,1);
+}
+/* 
+.card.green:hover h4{
+    margin-top: 0%;
+} 
+*/
+.card.green:hover::after{
+    font-family: FontAwesome;
+    content: "\f093";
+    color: white;
+    font-size: xx-large;
+}
+
+.fa{
+    cursor: pointer;
+}

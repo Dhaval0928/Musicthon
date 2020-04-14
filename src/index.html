@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Musicthon</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+</head>
+<body>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <div class="row playerRow" style="height: 5vw;"> 
+    <div class="col s12"> 
+      <p id="demo"></p> 
+      <div class="page-footer card blue darken-1 z-depth-5" style="max-height: 12vw; margin-bottom: 2vw;">
+        <span class="white-text" >
+          <div class="row" style="margin-bottom: 1%;">
+            <div class="col s2">
+              <i style="float:right; cursor: pointer;" id="leftIcon"></i>  
+            </div>
+            <div class="col s2">
+              <div class="row">
+                <div class="col s1"></div>
+                <div class="col s2" id="playIcon"></div>
+                <div class="col s1"></div>
+                <div class="col s4" id="songName" style="font-weight: bolder;"></div>
+                <div class="col s1"></div>
+                <div class="col s3" style="font-weight: bolder;" id="demo1"></div>
+              </div>
+            </div> 
+            <div class="col s4">
+              <div class="progress" style="width: 100%;">
+                <div id="progressBar" class="progress-bar" role="progressbar" [style.width.%]="progBar" aria-valuemin="0" aria-valuemax="100"></div>  
+              </div>
+            </div>
+            <div class="col s3">
+              <div style="float: left; font-weight: bolder;" id="demo2"></div>
+            </div> 
+            <div class="col s1">
+              <i style="float: left; cursor: pointer;" id="rightIcon"></i>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

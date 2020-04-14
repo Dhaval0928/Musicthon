@@ -1,0 +1,94 @@
+{
+  "configVersion": 1,
+  "timestamp": 1586881113712,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/index.html",
+        "/main-es2015.9a620a78ea9c9af2c6ae.js",
+        "/main-es5.9a620a78ea9c9af2c6ae.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.3d9f49f3b4a8747392bc.js",
+        "/polyfills-es5.891458742125cd4fd8c9.js",
+        "/runtime-es2015.c5fa8325f89fc516600b.js",
+        "/runtime-es5.c5fa8325f89fc516600b.js",
+        "/styles.7f5331de349b891c1525.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/Musicthon - 128x128.png",
+        "/assets/icons/Musicthon - 144x144.png",
+        "/assets/icons/Musicthon - 152x152.png",
+        "/assets/icons/Musicthon - 192x192.png",
+        "/assets/icons/Musicthon - 384x384.png",
+        "/assets/icons/Musicthon - 512x512.png",
+        "/assets/icons/Musicthon - 72x72.png",
+        "/assets/icons/Musicthon - 96x96.png",
+        "/favicon.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "firebase",
+      "patterns": [
+        "https:\\/\\/firebasestorage\\.googleapis\\.com\\/v0\\/b\\/musicthon-bea66\\.appspot\\.com\\/o\\/",
+        "https:\\/\\/musicthon-bea66\\.firebaseio\\.com\\/.*",
+        "https:\\/\\/s-usc1c-nss-237\\.firebaseio\\.com\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 21600000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/icons/Musicthon - 128x128.png": "510160b8a1530cbc53decb0882e6164e4af0963c",
+    "/assets/icons/Musicthon - 144x144.png": "db49614fa77959c893cae2ddb82c0de2957b992d",
+    "/assets/icons/Musicthon - 152x152.png": "2feebd1a6e9275cbcdf0e9cc268a81ef356b9da0",
+    "/assets/icons/Musicthon - 192x192.png": "eb1bb0b4379607c3f264cc9a0f82f8931d299560",
+    "/assets/icons/Musicthon - 384x384.png": "d9b69c64a1751cda2b8b6bf8bad14e282f688ecc",
+    "/assets/icons/Musicthon - 512x512.png": "9d46cfbb7004fd163d8cb4fd1f80884592e78f3a",
+    "/assets/icons/Musicthon - 72x72.png": "08465da2f048c93130e00694f28f8c67343f1a68",
+    "/assets/icons/Musicthon - 96x96.png": "a683a1920a7d130e9442d908a708d9f3cc2d6da2",
+    "/favicon.png": "d901b85d15d4952ca4c713992fc92d50df50a9a2",
+    "/index.html": "d361976883f1679cd6a5a4e3080930376620c62e",
+    "/main-es2015.9a620a78ea9c9af2c6ae.js": "4eaf7c742aac129b98dc13a93d45589f85a186d1",
+    "/main-es5.9a620a78ea9c9af2c6ae.js": "c5334e561aa410dd8c56d6a90259dc69338dd374",
+    "/manifest.webmanifest": "5b2f666ea494694fb882525b7483eed997f024fe",
+    "/polyfills-es2015.3d9f49f3b4a8747392bc.js": "f431ad1c77f34fb038fb091f5adf9935a61de8ce",
+    "/polyfills-es5.891458742125cd4fd8c9.js": "1b01218dcdadf6cf03eff2d0f39a772f680ec3ae",
+    "/runtime-es2015.c5fa8325f89fc516600b.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.c5fa8325f89fc516600b.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.7f5331de349b891c1525.css": "c73820b8576bf3b7b2076bcaffcd9505049b5293"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
